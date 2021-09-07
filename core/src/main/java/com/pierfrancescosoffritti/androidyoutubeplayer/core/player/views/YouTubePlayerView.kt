@@ -181,6 +181,9 @@ class YouTubePlayerView(context: Context, attrs: AttributeSet? = null, defStyleA
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     private fun onStop() = legacyTubePlayerView.onStop()
 
+    @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
+    private fun onPause() = legacyTubePlayerView.onStop()
+
     fun addYouTubePlayerListener(youTubePlayerListener: YouTubePlayerListener) =
             legacyTubePlayerView.youTubePlayer.addListener(youTubePlayerListener)
 
