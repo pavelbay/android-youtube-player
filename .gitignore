@@ -1,6 +1,6 @@
 *.iml
 .gradle
-/local.properties
+/local.propertiesgit
 /.idea/workspace.xml
 /.idea/libraries
 /.idea/dictionaries
